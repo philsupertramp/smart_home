@@ -1,5 +1,6 @@
 devices/*
 audio/*
-*/__pycache__/
+__pycache__
 *.json
 .idea
+.env

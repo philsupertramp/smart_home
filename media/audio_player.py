@@ -7,6 +7,25 @@ import vlc
 
 
 class AudioClient:
+    """
+    example usage::
+
+        audio = AudioClient('audio/song1.mp3')
+        audio.play()
+        while True:
+            a = input('a')
+            if a == 'p':
+                audio.pause()
+            elif a == 's':
+                audio.stop()
+            elif a == 'r':
+                audio.play()
+            elif a == 'n':
+                audio.stop()
+                song = input('URL: ')
+                audio.new_song(song)
+                audio.play()
+    """
     file_name = None
 
     def __init__(self, file_name: str):
