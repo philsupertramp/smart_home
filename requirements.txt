@@ -1,1 +1,2 @@
+pafy
 PyBluez==0.22
